@@ -22,3 +22,7 @@ function showAlert(){
     window.open("/testbatch/INDEX/explore.html");
   }
 }
+
+function goToProduct(){
+  window.open("/INDEX/product.html","_self");
+}

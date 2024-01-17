@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Product Showcase</title> -->
+    <title>KLASSY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/product.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/javascript/product.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar h-nav">
+        <div class="logo">
+            <img src="/images/logo.jpeg" alt="Brand Logo">
+            <h1>KLASSY</h1>
+        </div>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav-item"><a href="/INDEX/index.html">HOME</a></li>
+            <li class="nav-item dropdown">
+                <a href="/INDEX/index.html">ABOUT</a>
+                <div class="dropdown-content">
+                    <a href="#explore">Shop at Klassy</a>
+                    <a href="#history">History</a>
+                    <a href="#team">Team</a>
+                    <a href="#ideals">Our Ideals</a> 
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="/INDEX/contact.html">CONTACT US</a>
+                <div class="dropdown-content">
+                    <a href="#socials">Social Media</a>
+                    <a href="#forms">Directions</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="/INDEX/feedback.html">FEEDBACK</a>
+            </li>
+            <li class="nav-item"><a href="/INDEX/review.html">REVIEWS</a></li>
+            <li></li>
+        </ul>
+        
+          <div class="d-flex">
+            <a id="topnav-right" href="/INDEX/login.html"><button class="btn btn-primary" type="Login" style="cursor: pointer;">Login</button></a>
+            <a id="topnav-right" href="/INDEX/signUp.html"><button class="btn btn-success" type="SignUp" style="cursor: pointer;">SignUp</button></a>
+        </div> 
+    </div>
+    <header>
+        <h1>Products At Klassy</h1>
+    </header>
+    <div class="product-type"><h2>Sofa Set</h2></div>
+    <div class="product-container">
+        <div class="product">
+            <img src="/images/imgSofa1.webp" alt="Product 1">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Dreamy Couch</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 1 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+
+        <!-- Repeat the above product structure for other products -->
+
+        <div class="product">
+            <img src="/images/imgSofa2.webp" alt="Product 2">
+            <div class="rating">
+                <!-- Rating inputs and labels for Product 2 -->
+                 <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Classic White Set</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 2 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(2)">Submit Review</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="/images/imgSofa3.webp" alt="Product 3">
+            <div class="rating">
+                <!-- Rating inputs and labels for Product 3 -->
+                 <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Black Leather Sofa</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 3 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(3)">Submit Review</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="/images/imgSofa4.webp" alt="Product 4">
+            <div class="rating">
+                <!-- Rating inputs and labels for Product 2 -->
+                 <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Classic Brown Set</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 4 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(4)">Submit Review</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="/images/imgSofa5.webp" alt="Product 5">
+            <div class="rating">
+                <!-- Rating inputs and labels for Product -->
+                 <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Retro Style Sofa</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(5)">Submit Review</button>
+            </div>
+        </div>
+         
+        <div class="product">
+            <img src="/images/1-2.webp" alt="Product 6">
+            <div class="rating">
+                <!-- Rating inputs and labels for Product -->
+                 <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>B-L Style Set</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(6)">Submit Review</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="/images/pro1.webp" alt="Product 4">
+            <div class="rating">
+                <!-- Rating inputs and labels for Product -->
+                 <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Retro Beige Sofa</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(4)">Submit Review</button>
+            </div>
+        </div>
+    </div>
+    <div class="product-type"><h2>Living Area</h2></div>
+    <div class="product-container">
+        <div class="product">
+            <img src="/images/Cabinet1.webp" alt="Product 1">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Emerald Cabinet</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 1 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/images/Cabinet2.webp" alt="Product 2">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Traverse TV Unit</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 2 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/images/coffeetable2.webp" alt="Product 3">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Capsena Coffee Table</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 3 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/images/coffeetable3.webp" alt="Product 4">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Harmonia Coffee Table</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+    </div>
+    <div class="product-type"><h2>Dining Area</h2></div>
+    <div class="product-container">
+        <div class="product">
+            <img src="/images/imgDining1.webp" alt="Product 1">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Bianca Dining Set</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 1 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/images/imgDining2.webp" alt="Product 2">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Larissa Dining Set</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 2 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/images/imgDining5.webp" alt="Product 3">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Paramount Dining Set</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 3 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="/images/imgDining4.webp" alt="Product 4">
+            <div class="rating">
+                <input type="radio" name="rating1" id="star1-1">
+                <label for="star1-1">★</label>
+                <input type="radio" name="rating1" id="star1-2">
+                <label for="star1-2">★</label>
+                <input type="radio" name="rating1" id="star1-3">
+                <label for="star1-3">★</label>
+                <input type="radio" name="rating1" id="star1-4">
+                <label for="star1-4">★</label>
+                <input type="radio" name="rating1" id="star1-5">
+                <label for="star1-5">★</label>
+            </div>
+            <h4>Aria Dining Set</h4>
+            <button class="bttn">Add to Cart</button>
+            <div class="reviews-container">
+                <!-- Reviews for Product 4 will appear here -->
+            </div>
+            <div class="review">
+                <textarea placeholder="Write a review..."></textarea>
+                <button onclick="submitReview(1)">Submit Review</button>
+            </div>
+        </div>
+        
+    </div>
+     <!-- Footer -->
+        
+     <footer>
+        <div class="content">
+          <div class="top">
+            <div class="logo-details">
+              <img src="/images/logo.jpeg" alt="logo" width="40px" height="40px">
+              <span class="logo_name">KLASSY</span>
+            </div>
+            <div class="media-icons">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="link-boxes">
+            <ul class="box">
+              <p class="link_name">
+                "Life is too short for dull and lifeless spaces. Embrace the modern, the minimal, and the marvelous."
+              </p>
+            </ul>
+            <ul class="box">
+              <li class="link_name">Links</li>
+              <li><a href="/INDEX/index.html">Home</a></li>
+              <li><a href="/INDEX/contact.html">Contact us</a></li>
+              <li><a href="/INDEX/index.html">About us</a></li>
+              <li><a href="/INDEX/feedback.html">Feedback</a></li>
+              <li><a href="/INDEX/review.html">Review</a></li>
+            </ul>
+            
+            <ul class="box">
+              <li class="link_name">Office</li>
+              <li><a href="#">36170 Sihovhan Keys</a></li>
+              <li><a href="#">East Laine</a></li>
+              <li><a href="#">PA 58009-1849</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom-details">
+          <div class="bottom_text">
+            <span class="copyright_text">Copyright &copy; 2023 <a href="/INDEX/index3.html">KLASSY</a>All rights reserved</span>
+            <span class="policy_terms">
+              <a href="#">Privacy policy</a>
+              <a href="#">Terms & condition</a>
+            </span>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
